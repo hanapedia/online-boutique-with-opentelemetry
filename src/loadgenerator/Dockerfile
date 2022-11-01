@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM python:3.10-slim as base
+FROM --platform=linux/amd64 python:3.10-slim as base
 
 RUN apt-get -qq update \
     && apt-get install -y --no-install-recommends \

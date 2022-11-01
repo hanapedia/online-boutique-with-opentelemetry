@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM golang:1.17.7-alpine AS builder
+FROM --platform=linux/amd64 golang:1.17.7-alpine AS builder
 RUN apk add --no-cache ca-certificates git
 RUN apk add build-base
 
