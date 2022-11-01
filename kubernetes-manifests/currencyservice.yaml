@@ -29,7 +29,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: currencyservice
+        image: hiroki11hanada/currencyservice
         ports:
         - name: grpc
           containerPort: 7000

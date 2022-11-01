@@ -12,7 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM --platform=linux/amd64 openjdk:18-slim as builder
+# FROM --platform=linux/amd64 openjdk:18-slim as builder
+FROM openjdk:18-slim as builder
 
 WORKDIR /app
 

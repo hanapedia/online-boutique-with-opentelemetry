@@ -47,7 +47,7 @@ build:
   - image: otelcollector
     context: src/otelcollector
   tagPolicy:
-    gitCommit: {}
+    sha256: {}
   local:
     useBuildkit: false
 deploy:
@@ -105,6 +105,8 @@ build:
   artifacts:
   - image: loadgenerator
     context: src/loadgenerator
+  tagPolicy:
+    sha256: {}
 deploy:
   kubectl:
     manifests:
