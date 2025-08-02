@@ -50,6 +50,7 @@ build:
     sha256: {}
   local:
     useBuildkit: false
+    push: true
 deploy:
   kubectl:
     manifests:
